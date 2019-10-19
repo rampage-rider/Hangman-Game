@@ -1,2 +1,2 @@
 # Hangman-Python
-hello guyszzz!
+First shot at Python!!!
