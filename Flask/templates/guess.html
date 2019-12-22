@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<table>
+
+<tr><td>DASHED WORD </td> <td>  {{ dashed }}   </td> </tr>
+<tr><td>LIVES LEFT  </td> <td>   {{ life }} </td></tr>
+
+<form action="/guess" method="POST">
+<tr><td>ENTER YOUR GUESS </td><td><input type="text" placeholder="Guess" name="guess" maxlength="1" size="2" ></td></tr>
+</table>
+
+<input type="submit" name="submit">
+</form>
+{% endblock %}

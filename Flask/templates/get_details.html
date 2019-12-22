@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+{% block content %}
+
+
+<form action="/details" method="POST">
+<table>
+<tr><td>ENTER WORD</td> <td><input type="text" placeholder="Enter word" name="word" ></td></tr> 
+<tr><td>ENTER DASHED WORD </td> <td><input type="text" placeholder="word with _" name="dashed"></td></tr>
+<tr><td>ENTER No. LIVES</td><td><select name="life">
+
+
+<option disabled selected value="">Lives</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+</select>
+</td></tr>  
+</table>
+
+<input type="submit" name="submit">
+</form>
+{% endblock %}

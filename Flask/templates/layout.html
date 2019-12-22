@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HANGMAN</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='static/main.css') }}">
+    
+</head>
+
+
+<body>
+    <style>
+        table,td{
+        border:solid black 2px;
+        text-align: center;
+        padding: 1px;
+        margin-left: auto;
+        margin-right: auto;
+    
+    }
+    </style>
+    <center>
+        <h1>HANGMAN</h1>
+    {% block content %}
+    {% endblock %}
+</center>
+</body>
+
+</html>
